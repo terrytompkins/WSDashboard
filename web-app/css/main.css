@@ -19,6 +19,11 @@ body {
 #grailsLogo {
 	padding:20px;
 }
+
+#s2ui_header_body {
+	width: 100%;
+}
+
 #s2ui_header_title_inline {
 	display: inline;
 	border: 0px black solid;
