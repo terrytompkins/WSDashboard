@@ -13,4 +13,8 @@ class CodePhase {
 		lastUpdated()
 		modifiedBy()
 	}
+	
+	String toString() {
+		return name
+	}
 }

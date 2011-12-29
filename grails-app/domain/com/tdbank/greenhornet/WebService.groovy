@@ -13,4 +13,8 @@ class WebService {
 		lastUpdated()
 		modifiedBy()
 	}
+	
+	String toString() {
+		return name
+	}
 }

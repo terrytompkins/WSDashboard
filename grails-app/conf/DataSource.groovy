@@ -1,8 +1,14 @@
 dataSource {
+	pooled = false; //it is recommended not to use connection pool unless file encryption is enabled
+	driverClassName = "org.h2.Driver"
+	username = "sa"
+	password = ""
+/*
     pooled = true
     driverClassName = "org.hsqldb.jdbcDriver"
     username = "sa"
     password = ""
+*/
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -13,8 +19,9 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "create-drop" // one of 'create', 'create-drop','update'
-            url = "jdbc:hsqldb:mem:devDB"
+            dbCreate = "update" // one of 'create', 'create-drop','update'
+			url = "jdbc:h2:file:~/.h2"
+            // url = "jdbc:hsqldb:mem:devDB"
         }
     }
     test {

@@ -84,9 +84,12 @@
             <h1>Welcome to the TD Bank Web Services Dashboard</h1>
             <p>This application is a work in progress.  It will provide a database-driven means of tracking
 		  web services project activities (i.e. the IPM Control Book), development lead support schedules,
-		  project time line information, environment/code revision configuration information, etc. </p>
+		  project time line information, environment/code revision configuration information, etc.<br />
+		  The first release will provide a means of tracking web service environment-related information such
+		  as JVMs, service endpoints, connections to back-end systems, etc.
+		  </p>
 
-
+			<!-- 
             <div id="controllerList" class="dialog">
                 <h2><g:link controller="user" target="_blank">Access Security Subsystem</g:link></h2>
                 <h2>Available Controllers:</h2>
@@ -96,6 +99,7 @@
                     </g:each>
                 </ul>
             </div>
+            -->
         </div>
     </body>
 </html>

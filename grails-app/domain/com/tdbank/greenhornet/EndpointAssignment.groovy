@@ -19,9 +19,13 @@ class EndpointAssignment {
 		endpointUrl(unique:true, blank:false)
 		endpointType(nullable:false)
 		webService(nullable:false)
-		jvm(nullable:true)
+		jvm(nullable:false)
 		displayOrder(nullable:true)
 		lastUpdated()
 		modifiedBy()
+	}
+	
+	String toString() {
+		return endpointUrl
 	}
 }

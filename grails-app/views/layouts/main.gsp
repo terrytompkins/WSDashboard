@@ -14,31 +14,51 @@
             <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
         </div>
 	   <div id='s2ui_header_body'>
-		<div id="grailsLogo"><a href="http://grails.org"><img src="${resource(dir:'images',file:'GreenHornetLogo-small.jpg')}" alt="Green Hornet" border="0" /></a></div>
+		<span id="grailsLogo"><a href="http://grails.org"><img src="${resource(dir:'images',file:'GreenHornetLogo-small.jpg')}" alt="Green Hornet" border="0" /></a></span>
 
-		<div id='s2ui_header_title_inline'>Green Hornet - Web Services Dashboard</div>
+		<span id='s2ui_header_title_inline'>Green Hornet - Web Services Dashboard</span>
   				<z:style>
 				    .z-menubar-hor, .z-menubar-ver {
 			    	    border: 1px solid #D8D8D8;
 				    }
 			    </z:style>
             	<z:menubar id="menubar">
-					<z:menu label="File">
-						<z:menupopup onOpen="alert(self.id)">
-							<z:menuitem label="New" onClick="alert(self.label)" />
-							<z:menuitem label="Open" onClick="alert(self.label)" />
-							<z:menuitem label="Save" onClick="alert(self.label)" />
-							<z:menuseparator />
-							<z:menuitem label="Exit" onClick="alert(self.label)" />
+					<z:menu label="Environment Information">
+						<z:menupopup>
+							<z:menu label="Data Entry">
+								<z:menupopup>
+									<z:menuitem label="Channels" href="/GreenHornet/channel/index" />
+									<z:menuitem label="Code Phases" href="/GreenHornet/codePhase/index" />
+									<z:menuitem label="Ear Files" href="/GreenHornet/ear/index" />
+									<z:menuitem label="Endpoint Assignments" href="/GreenHornet/endpointAssignment/index" />
+									<z:menuitem label="Endpoint Types" href="/GreenHornet/endpointType/index" />
+									<z:menuitem label="External Systems" href="/GreenHornet/externalSystem/index" />
+									<z:menuitem label="External System Instances" href="/GreenHornet/externalSystemInstance/index" />
+									<z:menuitem label="JVMs" href="/GreenHornet/jvm/index" />
+									<z:menuitem label="Regions" href="/GreenHornet/region/index" />
+									<z:menuitem label="Servers" href="/GreenHornet/server/index" />
+									<z:menuitem label="Server Clusters" href="/GreenHornet/serverCluster/index" />
+									<z:menuitem label="Web Services" href="/GreenHornet/webService/index" />
+								</z:menupopup>
+							</z:menu>
+							<z:menuitem label="Environment Matrix" onClick="alert(self.label)" />
+						</z:menupopup>
+					</z:menu>
+					<z:menu label="Administration">
+						<z:menupopup>
+							<z:menuitem label="Security Settings" target="_GH_Security" href="/GreenHornet/securityInfo/config" />
+							<z:menuitem label="User Profiles" href="/GreenHornet/user/index" />
+							<z:menuitem label="GreenHornet DB Console" target="_GH_DBConsole" href="/GreenHornet/dbconsole" />
 						</z:menupopup>
 					</z:menu>
 					<z:menu label="Help">
 						<z:menupopup>
-							<z:menuitem label="Index" onClick="alert(self.label)" />
+							<z:menuitem label="US WebServices Development Site" target="_GH_PortalSite" href="http://w3.ustspmo.td.com/SiteDirectory/100331" />
+							<z:menuseparator />
 							<z:menu label="About">
 								<z:menupopup>
-									<z:menuitem label="About ZK" onClick="alert(self.label)" />
-									<z:menuitem label="About Potix" onClick="alert(self.label)" />
+									<z:menuitem label="About USTS WS" onClick="alert(self.label)" />
+									<z:menuitem label="About TD Bank" onClick="alert(self.label)" />
 								</z:menupopup>
 							</z:menu>
 						</z:menupopup>

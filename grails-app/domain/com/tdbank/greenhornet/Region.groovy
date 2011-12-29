@@ -13,4 +13,8 @@ class Region {
 		lastUpdated()
 		modifiedBy()	
 	}
+	
+	String toString() {
+		return name
+	}
 }

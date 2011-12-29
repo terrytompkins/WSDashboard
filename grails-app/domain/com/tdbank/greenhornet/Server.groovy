@@ -20,4 +20,8 @@ class Server {
 		lastUpdated()
 		modifiedBy()
 	}
+	
+	String toString() {
+		return name
+	}
 }

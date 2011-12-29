@@ -25,7 +25,9 @@ grails.project.dependency.resolution = {
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-
+		runtime('com.h2database:h2:1.3.146') {
+			transitive = false
+		}
         // runtime 'mysql:mysql-connector-java:5.1.13'
     }
 }

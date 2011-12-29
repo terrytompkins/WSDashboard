@@ -18,4 +18,8 @@ class Ear {
 		lastUpdated()
 		modifiedBy()
 	}
+	
+	String toString() {
+		return name
+	}
 }

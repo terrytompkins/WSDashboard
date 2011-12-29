@@ -1,8 +1,10 @@
 package com.tdbank.greenhornet
 
+import com.tdbank.greenhornet.ExternalSystemInstance
+
 class ExternalSystem {
 	String name
-	static hasMany = [jvms: Jvm]
+	static hasMany = [externalSystemInstances: ExternalSystemInstance]
 	Integer displayOrder
 	User modifiedBy
 	Date dateCreated
@@ -10,9 +12,13 @@ class ExternalSystem {
 
 	static constraints = {
 		name(unique:true, blank:false)
-		jvms()
+		externalSystemInstances()
 		displayOrder(nullable:true)
 		lastUpdated()
 		modifiedBy()
+	}
+	
+	String toString() {
+		return name
 	}
 }
