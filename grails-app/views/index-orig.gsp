@@ -66,7 +66,6 @@
                         <li>Services: ${grailsApplication.serviceClasses.size()}</li>
                         <li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
                     </ul>
-                    <!--  
                     <h1>Installed Plugins</h1>
                     <ul>
                         <g:set var="pluginManager"
@@ -77,7 +76,6 @@
                         </g:each>
 
                     </ul>
-                    -->
                 </div>
                 <div class="panelBtm"></div>
             </div>
@@ -91,8 +89,6 @@
 		  as JVMs, service endpoints, connections to back-end systems, etc.
 		  </p>
 
-
-
 			<!-- 
             <div id="controllerList" class="dialog">
                 <h2><g:link controller="user" target="_blank">Access Security Subsystem</g:link></h2>
@@ -104,9 +100,6 @@
                 </ul>
             </div>
             -->
-            
-            
-            
         </div>
     </body>
 </html>

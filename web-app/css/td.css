@@ -1,0 +1,32 @@
+/* container wraps content and allows us to set the 'main' interface apart from margins. It sets the size of interface and global properties */
+#container {
+   position: absolute;
+   background-color: white;
+   width: 750px;
+   margin: 0px;
+   margin-left: 50px;
+   padding: 0;
+   border: 1px solid #ccc;
+   
+}
+
+
+/*page header is the green box that contains logo*/
+#pageHeader { 
+	margin-bottom: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: #2C5B3B;
+    border-bottom: 3px solid #666666
+}
+
+/* the bng logo is being set as background for h1, easy to swap */
+#pageHeader h1 {
+	background: url(../images/tdbanknorthlogo.gif) no-repeat left top;
+   	width: 100%;
+	margin:10px;
+	height: 50px;
+	float: left;}
+
+/* this makes any text entered in H1 span invisible. so don't add any text. leave blank */	
+#pageHeader h1 span { display:none }

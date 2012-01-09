@@ -4,28 +4,19 @@
         <title><g:layoutTitle default="Green Hornet - WS Dashboard" /></title>
 <!-- <link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'spring-security-ui.css')}"/> -->
         <link rel="stylesheet" href="${resource(dir:'css',file:'main.css')}" />
-         <link rel="stylesheet" href="${resource(dir:'css',file:'td.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
 	    <z:resources/>
         <g:layoutHead />
         <g:javascript library="application" />
     </head>
-    
     <body>
-     <DIV id=container>
- 	<DIV id=pageHeader><H1><SPAN>Banknorth</SPAN></H1></DIV>
-    
-   
         <div id="spinner" class="spinner" style="display:none;">
             <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
         </div>
-     
 	   <div id='s2ui_header_body'>
-	    <!--  
 		<span id="grailsLogo"><a href="http://grails.org"><img src="${resource(dir:'images',file:'GreenHornetLogo-small.jpg')}" alt="Green Hornet" border="0" /></a></span>
 
 		<span id='s2ui_header_title_inline'>Green Hornet - Web Services Dashboard</span>
-		-->
   				<z:style>
 				    .z-menubar-hor, .z-menubar-ver {
 			    	    border: 1px solid #D8D8D8;
