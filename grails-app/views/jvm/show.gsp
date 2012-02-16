@@ -64,6 +64,19 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="jvm.projects.label" default="Projects" /></td>
+                            
+                            <td valign="top" style="text-align: left;" class="value">
+                                <ul>
+                                <g:each in="${jvmInstance.projects}" var="p">
+                                    <li><g:link controller="project" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+                                </g:each>
+                                </ul>
+                            </td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="jvm.lastEarDeployDate.label" default="Last Ear Deploy Date" /></td>
                             
                             <td valign="top" class="value"><g:formatDate date="${jvmInstance?.lastEarDeployDate}" /></td>

@@ -10,6 +10,12 @@ import org.zkoss.zul.*
 class EnvironmentSearchComposer {
 	def envSearchWindow
 	def envSearchGrid
+	def jvmFilter
+	def regionFilter
+	def channelFilter
+	def projectFilter
+	def codePhaseFilter
+	def environmentService
 
     def afterCompose = {Component comp ->
 		envSearchGrid.setRowRenderer(new EnvironmentRowRenderer());
@@ -18,7 +24,10 @@ class EnvironmentSearchComposer {
 
 	// Pillage from getFoodByInput method below
 	void getEnvDataByInput(Event event) {
-	
+		// ((Textbox) event.getTarget()).setValue(((org.zkoss.zk.ui.event.InputEvent) event).getValue());
+		// envSearchGrid.setModel(new ListModelList(FoodData.getFilterFoods(filter1.getValue(), filter2.getValue(), filter3.getValue())));
+		// @@@ filter columns independently select rows by value of filter select field.  from this construct List-based dataset
+		// @@@ Store filtered data in an array of groovy Map objects @@@
 	}
 	
 	public List<Jvm> getEnvDataForJvms()

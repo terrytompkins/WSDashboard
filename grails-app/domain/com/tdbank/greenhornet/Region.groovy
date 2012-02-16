@@ -11,7 +11,7 @@ class Region {
 		name(unique:true, blank:false)
 		displayOrder(nullable:true)
 		lastUpdated()
-		modifiedBy()	
+		modifiedBy()
 	}
 	
 	String toString() {

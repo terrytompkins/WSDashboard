@@ -69,6 +69,15 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="projects"><g:message code="jvm.projects.label" default="Projects" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: jvmInstance, field: 'projects', 'errors')}">
+                                    <g:select name="projects" from="${com.tdbank.greenhornet.Project.list()}" multiple="yes" optionKey="id" size="5" value="${jvmInstance?.projects*.id}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="lastEarDeployDate"><g:message code="jvm.lastEarDeployDate.label" default="Last Ear Deploy Date" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: jvmInstance, field: 'lastEarDeployDate', 'errors')}">

@@ -44,6 +44,7 @@
 									<z:menuitem label="External Systems" href="/GreenHornet/externalSystem/index" />
 									<z:menuitem label="External System Instances" href="/GreenHornet/externalSystemInstance/index" />
 									<z:menuitem label="JVMs" href="/GreenHornet/jvm/index" />
+									<z:menuitem label="Projects" href="/GreenHornet/project/index" />
 									<z:menuitem label="Regions" href="/GreenHornet/region/index" />
 									<z:menuitem label="Servers" href="/GreenHornet/server/index" />
 									<z:menuitem label="Server Clusters" href="/GreenHornet/serverCluster/index" />

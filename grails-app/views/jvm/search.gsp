@@ -28,24 +28,28 @@
 	<z:window id="envSearchWindow" apply="com.tdbank.greenhornet.EnvironmentSearchComposer">
 		<z:grid id="envSearchGrid">
 			<z:auxhead sclass="category-center">
-				<z:auxheader label="JVM Environment List" colspan="6" />
+				<z:auxheader label="JVM Environment List" colspan="7" />
 			</z:auxhead>
 			<z:auxhead sclass="category-center">
 				<z:auxheader colspan="1">
 					<image src="/images/funnel.png" />
-					<z:textbox id="jvmFilter" c:onClick="this.select()" onChanging='getEnvDataByInput(event)' width="100px" />
+					<z:textbox id="jvmFilter" onClick="this.select()" onChanging='getEnvDataByInput(event)' width="100px" />
 				</z:auxheader>
 				<z:auxheader colspan="1">
 					<image src="/images/funnel.png" />
-					<z:textbox id="regionFilter" c:onClick="this.select()" onChanging='getEnvDataByInput(event)' width="100px" />
+					<z:textbox id="regionFilter" onClick="this.select()" onChanging='getEnvDataByInput(event)' width="100px" />
 				</z:auxheader>
 				<z:auxheader colspan="1">
 					<image src="/images/funnel.png" />
-					<z:textbox id="channelFilter" c:onClick="this.select()" onChanging='getEnvDataByInput(event)' width="100px" />
+					<z:textbox id="channelFilter" onClick="this.select()" onChanging='getEnvDataByInput(event)' width="100px" />
 				</z:auxheader>
 				<z:auxheader colspan="1">
 					<image src="/images/funnel.png" />
-					<z:textbox id="codePhaseFilter" c:onClick="this.select()" onChanging='getEnvDataByInput(event)' width="100px" />
+					<z:textbox id="projectFilter" onClick="this.select()" onChanging='getEnvDataByInput(event)' width="100px" />
+				</z:auxheader>
+				<z:auxheader colspan="1">
+					<image src="/images/funnel.png" />
+					<z:textbox id="codePhaseFilter" onClick="this.select()" onChanging='getEnvDataByInput(event)' width="100px" />
 				</z:auxheader>
 				<z:auxheader label="Environment Attributes" colspan="3" />
 			</z:auxhead>
@@ -54,15 +58,16 @@
 				<z:column hflex="1">Region</z:column>
 				<z:column hflex="1">Channel</z:column>
 				<z:column hflex="1">Code Phase</z:column>
+				<z:column hflex="1">Project</z:column>
 				<z:column hflex="1">Ext. Sys. Instance</z:column>
 				<z:column hflex="1">Server Cluster</z:column>
 				<z:column hflex="2">Deployment Ear</z:column>
 			</z:columns>
 			<z:foot>
 				<z:footer />
-				<z:footer id="footer_msg" colspan="3" />
+				<z:footer id="footer_msg" />
 				<z:footer />
-				<z:footer id="footer_category" colspan="3" class="footer_right" label="A Total of @@@ JVMs, @@@ Endpoints." />
+				<z:footer id="footer_category"  class="footer_right" label="A Total of @@@ JVMs, @@@ Endpoints." />
 			</z:foot>
 		</z:grid>
 		</z:window>

@@ -1,7 +1,6 @@
 package com.tdbank.greenhornet
 
 import java.util.Date;
-import com.tdbank.greenhornet.*
 
 class Jvm {
 	String name
@@ -13,13 +12,14 @@ class Jvm {
 	User modifiedBy
 	Date dateCreated
 	Date lastUpdated
-	static hasMany = [ears: Ear, externalSystemInstances: ExternalSystemInstance]
+	static hasMany = [ears: Ear, externalSystemInstances: ExternalSystemInstance, projects: Project]
 	
 	static constraints = {
 		name(unique:true, blank:false)
 		server(nullable:false)
 		region(nullable:false)
 		externalSystemInstances()
+		projects()
 		lastEarDeployDate(nullable:false)
 		codePhase(nullable:false)
 		displayOrder(nullable:true)

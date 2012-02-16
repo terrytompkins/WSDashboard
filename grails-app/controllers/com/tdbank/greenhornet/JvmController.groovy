@@ -41,6 +41,11 @@ class JvmController {
         }
     }
 
+	def search = {
+		params.max = Math.min(params.max ? params.int('max') : 10, 100)
+		[jvmInstanceList: Jvm.list(params), jvmInstanceTotal: Jvm.count()]
+	}
+
     def edit = {
         def jvmInstance = Jvm.get(params.id)
         if (!jvmInstance) {
